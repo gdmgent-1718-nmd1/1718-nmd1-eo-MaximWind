@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,102 @@
     <title>Concurrentie analyse - Eindopdracht NMD-I</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/pages.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        .container_concurrent {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+            margin: 100px auto;
+        }
+        
+        .concurrenten {
+            box-shadow: 5px 5px 10px #1e1e1e;
+            margin: 20px;
+            padding: 20px;
+            position: relative;
+        }
+        
+        a {
+            text-decoration: none;
+            color: orangered;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        
+        ul {
+            list-style-type: square;
+            list-style-position: inside;
+            padding-left: 10px;
+        }
+        
+        li {
+            padding-left: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Concurrentie analyse</h1>
-    
+    <div class="container_concurrent">
+
+        <div class="concurrenten">
+            <a href="http://www.shipsomnia.com/">Website Shipsomnia</a>
+            <ul>Positieve zaken:
+                <li>Overzichtelijke informatie over elk deck</li>
+                <li>subnavigatie in main navigatie</li>
+                <li>informatie over faciliteiten duidelijk, via pijltje kan je de verschillende keuzes zien voor 1 faciliteit</li>
+                <li>fixed navigation</li>
+            </ul>
+            <ul>Negatieve zaken:
+                <li>Lange laadtijd voor homepage</li>
+                <li>alle informatie op pagina staat dicht op elkaar, waardoor het niet overzichtelijk is</li>
+
+            </ul>
+        </div>
+
+        <div class="concurrenten">
+            <a href="http://www.theark.cruises/en">Website The Ark</a>
+            <ul>Positieve zaken:
+                <li>Boek nu / mijn boeking altijd zichtbaar op de site</li>
+                <li>mogelijk op reisroute te zien, met informatie over de stopplaatsen. Einde pagina mogelijk op te boeken volgens route opties</li>
+                <li>informatie over faciliteiten van het ship en meer info over soorten kamers</li>
+                <li>kamer info met plattegrond, foto en mogelijkheid om het te boeken</li>
+                <li>bij prijs , keuze uit welke route, reisroute zie je veranderen op map net zoals de prijs</li>
+                <li>mooi overzicht over de artisten op welke stage en welke dag in ong 3 klikken weet je alles over 1 dag qua artisten</li>
+                <li>homepage met sfeer filmpje</li>
+                <li>bij de boeking mooi overzicht over elke kamer en indien nodig de mogeljikheid om meer uitleg te krijgen</li>
+            </ul>
+            <ul>Negatieve zaken:
+                <li>de boeking zelf loopt niet echt vlot, kan aantal personen niet direct kiezen</li>
+            </ul>
+        </div>
+
+        <div class="concurrenten">
+            <a href="http://www.holyship.com/">Website Holyship</a>
+            <ul>Positieve zaken:
+                <li>Plattegrond van het deck met een legende</li>
+                <li>Korte overzichtelijke uitleg met de mogelijkheden op het ship</li>
+                <li>sub-navigation in main navigation</li>
+            </ul>
+            <ul>Negatieve zaken:
+                <li>Geen direct overzicht van de line-up</li>
+                <li>geen taalkeuze</li>
+            </ul>
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>
