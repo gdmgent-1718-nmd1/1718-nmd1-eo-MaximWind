@@ -1,14 +1,139 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
     <title>Digital Styleguide - Eindopdracht NMD-I</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/pages.css">
+    <META HTTP-EQUIV="Refresh" CONTENT="5">
+
 </head>
+
 <body>
     <h1>Digital Styleguide</h1>
+
+    <div class="tableContainer">
+        <table>
+            <tr class="tekstTH">
+                <th>Knop</br> (hover voor effect)</th>
+                <th>opmaak in normale mode</th>
+                <th>opmaak in hover mode</th>
+            </tr>
+            <tr>
+                <td><button class="basicButton">Lees meer</button></td>
+                <td>background: none; </br>border: 3px solid var(--main-clr); </br>border-radius: 95px; </br>color: var(--main-clr); </br>display: block; </br>font-size: 20px; </br>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; </br>font-weight:
+                    bold; </br>padding: 5px; </br>padding-left: 15px; </br>padding-right: 15px; </br>position: relative; </br>cursor: pointer; </br>margin-bottom: 10px; </br>
+                    </br>-webkit-transition: all 0.3s;</br>
+                    -moz-transition: all 0.3s;</br>
+                    -o-transition: all 0.3s;</br>
+                    transition: all 0.3s;</br>
+                    </br>::after { </br>height: 0;</br> left: 50%;</br> top: 50%;</br> width: 0; }
+                </td>
+                <td>color: var(--white-clr);</br>
+                    border-color: var(--white-clr);
+                    </br>
+                    </br>::after { </br>height: 100%;</br> left: 0;</br> top: 0; </br>width: 100%; }</td>
+            </tr>
+
+            <tr>
+                <td><button class="basicButton" id="bookButton">Boek Nu</button></td>
+                <td>" + </br>text-transform: uppercase; </td>
+                <td>"</td>
+            </tr>
+
+            <tr>
+                <td><button class="basicButton"><i class="fas fa-comment-alt iconWithText"></i>Help</button></td>
+                <td>" +</br> margin-right: 10px (enkel voor icoontje);
+                </td>
+                <td>"</td>
+            </tr>
+
+            <tr>
+                <td><button class="basicButton"><i class="fas fa-comment-alt"></i></button></td>
+                <td>"</td>
+                <td>"</td>
+            </tr>
+
+            <tr>
+                <td> <button class="basicButton" id="arrowDownButton"><i class="fas fa-angle-double-down"></i></button></td>
+                <td>animation: moveing 2s infinite ease; </br> @keyframes moveing{</br> 0% { top: 0px }</br> 50% { top: 10px }</br> 100% { top: 00px } }
+                </td>
+                <td>"</td>
+            </tr>
+
+            <tr>
+                <td><button class="subButton" id="subButton">2016</button></td>
+                <td> background-color: var(--black-clr); </br> opacity: .69; </br> border-radius: 0; </br> padding: 10px; </br> padding-left: 40px; </br> padding-right: 40px; </br> font-size: 25px; </br> color: var(--white-clr); </br> border: none; </br> position:
+                    relative; </br>
+                    </br>::after {</br> content: '';</br> background-color: var(--white-clr); </br>width: 0px;</br> position: absolute;</br> height: 2px;</br> left: 50%;</br> transform: translateX(-50%);</br> bottom: 8px; }
+
+                </td>
+                <td>::after {</br>
+                    width: 100px; }
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr class="tekstTH">
+                <th>Kleur</th>
+                <th>kleur codes</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="colorDiv" id="mainColor"></div>
+                </td>
+                <td> <span>Hex:</span> #31155F </br> <span>RGB:</span> rgb(49, 21, 95) </br> <span>HSL:</span> hsl(263°, 64%, 23%)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="colorDiv" id="accentColor"></div>
+                </td>
+                <td> <span>Hex:</span> #BECE55 </br> <span>RGB:</span> rgb(190, 206, 85) </br> <span>HSL:</span> hsl(68°, 55%, 57%)</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="colorDiv" id="whiteColor"></div>
+                </td>
+                <td><span>Hex:</span> #fff </br> <span>RGB:</span> rgb(255, 255, 255) </br> <span>HSL:</span> hsl(0°, 100%, 100%)</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="colorDiv" id="blackColor"></div>
+                </td>
+                <td><span>Hex:</span> #000 </br> <span>RGB:</span> rgb(0, 0, 0) </br> <span>HSL:</span> hsl(0°, 0%, 0%)</td>
+            </tr>
+        </table>
+        <table>
+            <tr class="tekstTH">
+                <th>voorbeeld tekst</th>
+                <th>opmaak tekst</th>
+            </tr>
+            <tr>
+                <td class="titel" id="ui">Alle titels en tekst in knoppen</td>
+                <td>font-family: 'Segoe UI';</br> font-weight: bold; </br>font-size: 26px, 36px, 80px;</td>
+            </tr>
+            <tr>
+                <td class="titel" id="print">Alle groene tekst</td>
+                <td>font-family: 'Segoe Print'; </br>font-size: 30px, 40px;</td>
+            </tr>
+            <tr>
+                <td class="titel" id="slabo">Alle doorlopende tekst</td>
+                <td>font-family: slabo 27px;</br> font-size: 30px;</td>
+            </tr>
+        </table>
+    </div>
+
+
 </body>
+
 </html>
